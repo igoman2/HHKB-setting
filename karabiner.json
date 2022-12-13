@@ -95,18 +95,39 @@
             "description": "Shift+Backspace to Delete",
             "manipulators": [
               {
-                "type": "basic",
                 "from": {
+                  "key_code": "delete_or_backspace",
                   "modifiers": {
                     "mandatory": ["shift"],
                     "optional": ["caps_lock"]
-                  },
-                  "key_code": "delete_or_backspace"
+                  }
                 },
                 "to": [
                   {
                     "key_code": "delete_or_backspace",
                     "modifiers": ["fn"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Option + Tab to Control + Tab",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "tab",
+                  "modifiers": {
+                    "mandatory": ["option"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": ["left_control"]
                   }
                 ]
               }
@@ -341,7 +362,18 @@
         "delay_milliseconds_before_open_device": 1000
       },
       "selected": true,
-      "simple_modifications": [],
+      "simple_modifications": [
+        {
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "to": [
+            {
+              "key_code": "f13"
+            }
+          ]
+        }
+      ],
       "virtual_hid_keyboard": {
         "country_code": 0,
         "indicate_sticky_modifier_keys_state": true,
