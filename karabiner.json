@@ -134,11 +134,11 @@
             ]
           },
           {
-            "description": "Left ctrl + hjkl to arrow keys",
+            "description": "Left ctrl + lp;' to arrow keys",
             "manipulators": [
               {
                 "from": {
-                  "key_code": "j",
+                  "key_code": "l",
                   "modifiers": {
                     "mandatory": ["left_control"],
                     "optional": ["any"]
@@ -153,7 +153,7 @@
               },
               {
                 "from": {
-                  "key_code": "k",
+                  "key_code": "semicolon",
                   "modifiers": {
                     "mandatory": ["left_control"],
                     "optional": ["any"]
@@ -168,7 +168,7 @@
               },
               {
                 "from": {
-                  "key_code": "i",
+                  "key_code": "p",
                   "modifiers": {
                     "mandatory": ["left_control"],
                     "optional": ["any"]
@@ -183,7 +183,7 @@
               },
               {
                 "from": {
-                  "key_code": "l",
+                  "key_code": "quote",
                   "modifiers": {
                     "mandatory": ["left_control"],
                     "optional": ["any"]
